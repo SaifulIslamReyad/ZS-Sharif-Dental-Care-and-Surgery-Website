@@ -24,6 +24,7 @@ nav {
 .logo {
   display: flex;
   align-items: center;
+  flex-direction: row; /* Ensure they stay side by side */
 }
 
 .logo img {
@@ -78,6 +79,16 @@ nav {
   margin: 4px 0;
 }
 
+.close-icon {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -121,7 +132,8 @@ nav {
   display: inline-block;
   text-align: left;
 }
-.content ul a{
+
+.content ul a {
   color: yellow;
 }
 
@@ -185,8 +197,8 @@ nav {
   }
 
   .logo {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
   }
 
   .logo img {
@@ -194,7 +206,7 @@ nav {
   }
 
   .logo-text {
-    margin-top: 5px;
+    margin-top: 0;
   }
 
   .logo-text h1 {
@@ -207,8 +219,8 @@ nav {
 
   .info-container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .opening-hours,
@@ -216,6 +228,7 @@ nav {
     margin-bottom: 20px;
   }
 }
+
 .info-container {
   display: flex;
   justify-content: space-between;
@@ -223,43 +236,43 @@ nav {
   padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
-  text-align: left; 
+  text-align: left;
 }
 
 .info-container h3,
 .info-container p {
   color: black;
-  text-align: left; 
+  text-align: left;
 }
 
 .opening-hours,
 .contact-info {
   flex: 1;
-  text-align: left; 
+  text-align: left;
 }
 
 .opening-hours h3,
 .contact-info h3 {
   margin-bottom: 10px;
-  text-align: left; 
+  text-align: left;
 }
 
 .opening-hours p,
 .contact-info p {
   margin: 5px 0;
-  text-align: left; 
+  text-align: left;
 }
 
 @media (max-width: 768px) {
   .info-container {
     flex-direction: column;
-    align-items: flex-start; 
-    text-align: left; 
+    align-items: flex-start;
+    text-align: left;
   }
 
   .opening-hours,
   .contact-info {
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
   }
 }
