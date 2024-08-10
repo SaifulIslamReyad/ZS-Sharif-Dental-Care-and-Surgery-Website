@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #0a0b0b;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: rgb(250, 250, 76);
+}
+
+.logo-text h1 {
+  font-size: 1.2em;
+}
+
+.logo-text p {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links li a:hover {
+  color: yellow;
+  font-size: 1.1em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease;
+  transform: translateX(100%);
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.content h2,
+.content h3,
+.content p,
+.content ul {
+  margin: 10px 0;
+}
+
+.content ul {
+  margin: 20px auto;
+  padding: 20px;
+  list-style: none;
+  background-color: #2e2f2c;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+.content ul a{
+  color: yellow;
+}
+
+.content ul li {
+  margin: 10px 0;
+  padding: 5px 10px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 76);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.info-container h3,
+.info-container p {
+  color: black;
+}
+
+.opening-hours,
+.contact-info {
+  flex: 1;
+}
+
+.opening-hours h3,
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.opening-hours p,
+.contact-info p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #090a0a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  .logo-text {
+    margin-top: 5px;
+  }
+
+  .logo-text h1 {
+    font-size: 1em;
+  }
+
+  .logo-text p {
+    font-size: 0.8em;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .opening-hours,
+  .contact-info {
+    margin-bottom: 20px;
+  }
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 76);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: left; 
+}
+
+.info-container h3,
+.info-container p {
+  color: black;
+  text-align: left; 
+}
+
+.opening-hours,
+.contact-info {
+  flex: 1;
+  text-align: left; 
+}
+
+.opening-hours h3,
+.contact-info h3 {
+  margin-bottom: 10px;
+  text-align: left; 
+}
+
+.opening-hours p,
+.contact-info p {
+  margin: 5px 0;
+  text-align: left; 
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left; 
+  }
+
+  .opening-hours,
+  .contact-info {
+    margin-bottom: 20px;
+    text-align: left; 
+  }
+}
