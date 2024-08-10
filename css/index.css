@@ -24,11 +24,11 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  flex-direction: row; /* Ensure they stay side by side */
+  flex-direction: row; 
 }
 
 .logo img {
-  max-width: 150px;
+  max-width: 70px; 
   height: auto;
   margin-right: 10px;
 }
@@ -202,7 +202,7 @@ nav {
   }
 
   .logo img {
-    max-width: 120px;
+    max-width: 50px; 
   }
 
   .logo-text {
