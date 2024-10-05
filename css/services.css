@@ -1,0 +1,37 @@
+.services {
+    padding: 20px;
+    text-align: center;
+}
+
+.service {
+    background-color: #2e2f2c;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.service p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
